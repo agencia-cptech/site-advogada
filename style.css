@@ -66,17 +66,16 @@
 	background: rgba(0,0,0,0.6) ;
 }
 .headerBlockBackground__info{
-	width: 30vw;
+	width: 48vw;
 	height: 60vh;
 	position: absolute;
-	top: 35%;
-	right: 32%;
+	top: 30%;
+	right: 19%;
 }
 .headerBlockBackground__title{
-	width: 100%;
 	text-align: center;
 	color: white;
-	font-size: 2.5rem;
+	font-size: 50px;
 	margin: 20% 0 15% 0;
 }
 .headerBlockBackground__buttom{
@@ -129,15 +128,19 @@
 		top: 9%;
 		left: 11%;	
 	}
+	.header__blockBackground, .headerBlockBackground__transparent{
+		height: 70vh;
+	}
 	.headerBlockBackground__info{
 		width: 73vw;
 		height: 250px;
 		position: absolute;
-		top: 28%;
+		top: 40%;
 		right: 13%;
 	}
 	.headerBlockBackground__title{
 		margin: 10% 0;
+		font-size: 40px;
 	}
 	.headerBlockBackground__buttom{
 		width: 300px;
@@ -146,7 +149,7 @@
 }
 @media(max-width: 375px){
 	#nav{
-		height: 14vh;
+		height: 12vh;
 	}
 	.header__logo{
 		width: 150px;
@@ -160,13 +163,10 @@
 		min-width: 50%;
 		height: 250px;
 		position: absolute;
-		top: 35%;
 		left: 5%;
 	}
+	
 }
-
-
-
 /*MAIN MAIN MAIN MAIN*/
 
 main{
@@ -210,12 +210,13 @@ main{
 }
 @media(max-width: 768px){
 	.main__firstSecond{
-		flex-direction: column;
 		height: auto;
+		flex-direction: column;
 	}
 	.firstSecond__block{
-		width: 300px;
+		width: 70%;
 		order: 2;
+		text-align: center;
 	}
 	.firstSecond__title{
 		font-size: 26px;
@@ -236,12 +237,7 @@ main{
 	width: 100%;
 	height: 109vh;
 	background: #B71F1F;
-
-/*	background-size: cover;
-	background-position: center;
-	background-image: url(assets/image/fundo.jpg);*/
 }
-
 .secondSection__block{
 	height: auto;
 	display: flex;
@@ -276,7 +272,7 @@ img{
 		margin: 9px;
 	}
 	.main__secondSection{
-		height: 1280px;
+		height: 1120px;
 	}
 }
 @media(max-width: 475px){
@@ -300,7 +296,6 @@ img{
 .container{
 	width: 100%;
 	max-width: 1024px;
-	/*height: auto;*/
 	margin: 0 auto;
 	padding: 30px 20px;
 }
@@ -310,11 +305,7 @@ img{
 .modificacao{
 	height: 34vh;
 	display: flex;
-	/*justify-content: center;
-	align-items: center;*/
 	flex-direction: column;
-
-	/*background-color: yellow;*/
 }
 .footer__infor{
 	color: #B71F1F;
@@ -337,7 +328,5 @@ span{
 	}
 	.footer__infor{
 		font-size: 20px;
-
-		/*background: blue;*/
 	}
 }
