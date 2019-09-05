@@ -14,6 +14,8 @@
 	height: 9vh;
 	display: flex;
 	justify-content: center;
+
+	background: white;
 }
 .header__blockWhite-Title{
 	font-size: 20px;
@@ -27,17 +29,24 @@
 
 /*NAV NAV NAV NAV*/
 
+.header__fixed{
+	width: 100%;
+	height: 29vh;
+	position: fixed;
+	top: 0;
+}
 #nav{
 	width: 100%
 	max-width 1024px;
 	height: 15vh;
 	background: #B71F1F;
+	
 }
 .header__logo{
 	width: 170px;
 	height: 165px;
 	position: absolute;
-	top: 4%;
+	top: 18%;
 	left: 20%;
 }
 .nav__menuDesktop{
@@ -56,21 +65,23 @@
 	text-transform: uppercase;
 }
 .header__blockBackground{
-	height: 76vh;
+	height: 100vh;
 	background-size: cover;
+	background-position: center;
 	background-image: url("assets/image/headerfundo.jpg");
 }
 .headerBlockBackground__transparent{
 	width: 100%;
-	height: 76vh;
+	height: 100vh;
 	background: rgba(0,0,0,0.6) ;
 }
 .headerBlockBackground__info{
-	width: 48vw;
+	width: 50%;
 	height: 60vh;
 	position: absolute;
 	top: 30%;
 	right: 19%;
+	/*background: red;*/
 }
 .headerBlockBackground__title{
 	text-align: center;
@@ -114,6 +125,9 @@
 	.header__blockWhite{
 		flex-direction: column;
 	}
+	.header__blockBackground, .headerBlockBackground__transparent{
+		height: 90vh;
+	}
 	.header__blockWhite-Title, .header__blockWhite-Contato{
 		margin: 2% 2% 5px;
 		text-align: center;
@@ -125,17 +139,14 @@
 		width: 160px;
 		height: 150px;
 		position: absolute;
-		top: 9%;
+		top: 30%;
 		left: 11%;	
-	}
-	.header__blockBackground, .headerBlockBackground__transparent{
-		height: 70vh;
 	}
 	.headerBlockBackground__info{
 		width: 73vw;
 		height: 250px;
 		position: absolute;
-		top: 40%;
+		top: 35%;
 		right: 13%;
 	}
 	.headerBlockBackground__title{
@@ -152,10 +163,10 @@
 		height: 12vh;
 	}
 	.header__logo{
-		width: 150px;
-		height: 150px;
+		width: 140px;
+		height: 140px;
 		position: absolute;
-		top: 12%;
+		top: 35%;
 		left: 8%;	
 	}
 	.headerBlockBackground__info{
@@ -208,6 +219,11 @@ main{
 	height: auto;
 	order: 2;
 }
+/*@media(max-width: 1024px){
+	.main__firstSecond{
+	height: 100vh;
+}
+}*/
 @media(max-width: 768px){
 	.main__firstSecond{
 		height: auto;
