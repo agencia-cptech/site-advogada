@@ -22,6 +22,22 @@
 						<a class="headerNav__menuLink" href="#acting">Atuação</a>
 						<a class="headerNav__menuLink" href="#contact">Contato</a>
 					</div>
+					<div id="mySidenav" class="sidenav">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<a class="menu-siderbar" href="#header">Home</a>
+						<a class="menu-siderbar" href="#about">Sobre</a>
+						<a class="menu-siderbar" href="#acting">Atuação</a>
+						<a class="menu-siderbar" href="#contact">Contato</a>
+					</div>
+					<span style="font-size:65px;   cursor:pointer" onclick="openNav()">&#9776;</span>
+					<script>
+						function openNav() {
+						  document.getElementById("mySidenav").style.width = "100%";
+						}
+						function closeNav() {
+						  document.getElementById("mySidenav").style.width = "0";
+						}
+					</script>
 				</nav>
 			</div>
 			<div class="header__blockBackground">
@@ -73,17 +89,17 @@
 		</main>
 		<footer id="contact">
 			<div class="footer__information">
-				<p class="footer__paragraph"><span>telefone</span> (21) 98847-0082</p>
-				<p class="footer__paragraph"><span>email:</span> Contato@cristinaluz.com.br</p>
-				<p class="footer__paragraph"><span>endereço:</span> Rua do Carmo n7 - 17 andar - Centro</p> 
+				<p class="footer__paragraph"><strong>telefone</strong> (21) 98847-0082</p>
+				<p class="footer__paragraph"><strong>email:</strong> Contato@cristinaluz.com.br</p>
+				<p class="footer__paragraph"><strong>endereço:</strong> Rua do Carmo n7 - 17 andar - Centro</p> 
 				<p class="footer__paragraph">Rio de Janeiro/RJ - CEP: 20.011-020</p>
 				<div class="footer__blockNetwork">
 					<a href=" https://www.facebook.com/dracristinaluz"><img class="footer__icon-redes" src="assets/image/faceicon2.png"></a>
 					<a href="https://api.whatsapp.com/send?l=pt&phone=5521964636400"><img class="footer__icon-redes" src="assets/image/whatsicon2.png"></a>
 					<a href="https://m.me/dracristinaluz"><img class="footer__icon-redes" src="assets/image/messengericon2.png"></a>
 				</div>
-				<p class="footer__paragraph"><span>Cristina Luz Advocacia</span> - Todos direitos reservados</p>
-				<p class="footer__paragraph"><span>Desenvolvimento:</span> <a href="http://www.agenciacptech.com.br/">Agência CpTech</a>, Design by Claudio Marques</p>
+				<p class="footer__paragraph"><strong>Cristina Luz Advocacia</strong> - Todos direitos reservados</p>
+				<p class="footer__paragraph"><strong>Desenvolvimento:</strong> <a href="http://www.agenciacptech.com.br/">Agência CpTech</a>, Design by Claudio Marques</p>
 			</div>
 			<!-- <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5541999999"><img src="https://i.imgur.com/ryESuZ5.png" style="width: 65px; height: auto; position:fixed; bottom: 25px; right: 25px; z-index:99999;" data-selector="img"></a> -->
 		</footer>
