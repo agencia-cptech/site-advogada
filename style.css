@@ -6,7 +6,7 @@
 }
 #header{
 	width: 100%,
-	max-width 1024px;
+	/*max-width 1024px;*/
 	height: 100vh;
 }
 .header__blockWhite{
@@ -64,26 +64,33 @@
 	text-decoration: none;
 	text-transform: uppercase;
 }
+
+/**/
+
 .header__blockBackground{
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
 	background-image: url("assets/image/headerfundo.jpg");
+
 }
 .headerBlockBackground__transparent{
 	width: 100%;
 	height: 100vh;
-	background: rgba(0,0,0,0.6) ;
+	background: rgba(0,0,0,0.7) ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 }
 .headerBlockBackground__info{
 	width: 50%;
-	height: 60vh;
-	position: absolute;
-	top: 30%;
-	right: 19%;
+	height: 50vh;
+	margin-left: 11%;
 	/*background: red;*/
+
 }
-.headerBlockBackground__title{
+.headerBlockBackground__title{ 
 	text-align: center;
 	color: white;
 	font-size: 50px;
@@ -94,35 +101,11 @@
 	margin: 0 7%;
 }
 
-@media(max-width: 1024px){
-	.header__blockWhite{
-		width: 100%;
-		height: 10vh;
-		display: flex;
-		justify-content: center;
-	}
-	.header__logo{
-		width: 160px;
-		height: 150px;
-		position: absolute;
-		top: 10%;
-		left: 11%;	
-	}
-	#nav{
-		height: 17vh;
-	}
-}
+
 @media(max-width: 768px){
 	.header__blockWhite{
 		width: 100%;
 		height: auto;
-		display: flex;
-		justify-content: center;
-	}
-	#nav{
-		height: 11vh;
-	}
-	.header__blockWhite{
 		flex-direction: column;
 	}
 	.header__blockBackground, .headerBlockBackground__transparent{
@@ -132,51 +115,56 @@
 		margin: 2% 2% 5px;
 		text-align: center;
 	}
+	#nav{
+		height: 13vh;
+	}
 	.nav__menuDesktop{
 		display: none;
 	}
 	.header__logo{
 		width: 160px;
 		height: 150px;
-		position: absolute;
-		top: 30%;
+		top: 28%;
 		left: 11%;	
 	}
 	.headerBlockBackground__info{
 		width: 73vw;
 		height: 250px;
-		position: absolute;
-		top: 35%;
-		right: 13%;
+		margin: 13%;
+		margin-top: 40%;
 	}
 	.headerBlockBackground__title{
 		margin: 10% 0;
 		font-size: 40px;
 	}
-	.headerBlockBackground__buttom{
-		width: 300px;
-		margin: 0;
-	}
 }
 @media(max-width: 375px){
-	#nav{
-		height: 12vh;
-	}
 	.header__logo{
 		width: 140px;
 		height: 140px;
-		position: absolute;
-		top: 35%;
+		top: 31%;
 		left: 8%;	
 	}
 	.headerBlockBackground__info{
 		width: 90vw;
 		min-width: 50%;
 		height: 250px;
-		position: absolute;
-		left: 5%;
 	}
 	
+}
+@media(max-width: 320px){
+	.header__logo{
+		top: 35%;
+		left: 8%;	
+	}
+	.header__blockBackground, .headerBlockBackground__transparent{
+		height: 100vh;
+	}
+	.headerBlockBackground__info{
+		margin: 4%;
+		margin-top: 50%;
+	}
+
 }
 /*MAIN MAIN MAIN MAIN*/
 
@@ -191,17 +179,16 @@ main{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: row;
+	/*flex-direction: row;*/
 }
 .firstSecond__block{
 	width: 40%;
 	height: auto;
-	order: 1;
+	order: 1;	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-bottom: 20px;
 }
 .firstSecond__title{
 	font-size: 40px;
@@ -209,7 +196,7 @@ main{
 .firstSecond__paragraph, .firstSecond__title{
 	width: 70%;
 	color: black;
-	margin: 10px 0;
+	padding: 10px 0;
 }
 .firstSecond__paragraph{
 	font-size: 19px;
@@ -219,11 +206,7 @@ main{
 	height: auto;
 	order: 2;
 }
-/*@media(max-width: 1024px){
-	.main__firstSecond{
-	height: 100vh;
-}
-}*/
+
 @media(max-width: 768px){
 	.main__firstSecond{
 		height: auto;
@@ -251,7 +234,7 @@ main{
 
 .main__secondSection{
 	width: 100%;
-	height: 109vh;
+	height: auto;
 	background: #B71F1F;
 }
 .secondSection__block{
@@ -260,6 +243,7 @@ main{
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding: 30px 20px;
 }
 .secondSection__areas{
 	width: 300px;
@@ -271,7 +255,7 @@ main{
 	background: rgba(255,255,255,0.7);	
 	box-shadow: 0 0 8px #242121;
 }
-img{
+.secondSectionAreas__icons{
 	width: 160px;
 	height: 150px;
 	margin: 1px;
@@ -307,42 +291,78 @@ img{
 		height: 2270px;
 	}
 }
-/*FOOTER*/
+/*FOOTER  FOOTER  FOOTER  FOOTER */
 
-.container{
+.footer__information{
 	width: 100%;
-	max-width: 1024px;
+	height: 38vh;
 	margin: 0 auto;
-	padding: 30px 20px;
+	padding: 2% 20px;
 }
-#footer{
-	background: white;
-}
-.modificacao{
-	height: 34vh;
-	display: flex;
-	flex-direction: column;
-}
-.footer__infor{
+.footer__paragraph{
 	color: #B71F1F;
 	padding: 4px;
 	text-align: center;
 	font-size: 15px;
 }
+.footer__blockNetwork{
+	display: flex;
+	justify-content: center;
+}
 span{
+	text-transform: uppercase;
 	font-weight: bolder;
 }
+
 .footer__icon-redes{
 	width: 35px;
-	margin: 10px 7px;
-	border-radius: 50%;
+	height: auto;
+	margin: 9px 7px;
 }
 @media(max-width: 768px){
-	.modificacao{
-		height: 67vh;
-		padding: 20px;
+	.footer__information{
+		height: 76vh;
+		padding: 7% 0;
 	}
-	.footer__infor{
-		font-size: 20px;
+	.footer__paragraph{
+		font-size: 18px;
+	}
+}
+@media(max-width: 760px){
+	.footer__information{
+		height: 73vh;
+	}
+}
+
+/*MEDIA GLOBAL*/
+
+@media(min-width: 769px) and (max-width: 1024px){
+	.header__blockWhite{
+		height: auto;
+	}
+	.header__blockWhite-Title, .header__blockWhite-Contato{
+		margin: 20px 10px;
+	}
+	.header__logo{
+		width: 160px;
+		height: 150px;
+		top: 10%;
+		left: 11%;	
+	}
+	#nav{
+		height: 8vh;
+	}
+	.header__blockBackground, .headerBlockBackground__transparent{
+		height: 80vh;
+	}
+	.main__firstSecond{
+		height: 40vh;
+	}
+	.secondSection__block{
+		width: 88%;
+		flex-flow: wrap;
+	}
+	.footer__information{
+		height: 76vh;
 	}
 }
