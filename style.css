@@ -267,6 +267,7 @@ main{
 	width: 25%;
 	height: auto;
 	order: 2;
+	
 }
 
 @media(max-width: 768px){
@@ -298,7 +299,7 @@ main{
 }*/
 .main__secondSection{
 	width: 100%
-	width: 1024px;
+	max-width: 1024px;
 	height: auto;
 	background: #B71F1F;
 }
