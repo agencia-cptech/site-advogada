@@ -6,51 +6,47 @@
 		<link rel="shortcut icon" href="assets/image/logo reforma.jpg" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <script src="js/jquery/jquery.easing.js" type="text/javascript"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
 	</head>
 	<body>
 		<header id="header">
-			<div class="header__fixed">
-				<div class="header__blockWhite">
-					<h3 class="header__blockWhite-Title">Cristina Luz - Advocacia</h3>
-					<p class="header__blockWhite-Contato">(21) 96463-6400</p>
-				</div>
-				<nav id="nav">
-					<div class="nav__nav">
-						<img class="header__logo" src="assets/image/logo reforma.jpg">
-						<div class="nav__menuDesktop">
-							<a class="headerNav__menuLink" href="#header">Home</a>
-							<a class="headerNav__menuLink" href="#about">Sobre</a>
-							<a class="headerNav__menuLink" href="#acting">Atuação</a>
-							<a class="headerNav__menuLink" href="#contact">Contato</a>
+			<div id="topo">
+				<div class="header__fixed">
+					<div class="header__blockWhite">
+						<h3 class="header__blockWhite-Title">Cristina Luz - Advocacia</h3>
+						<p class="header__blockWhite-Contato">(21) 96463-6400</p>
+					</div>
+					<nav id="header__nav">
+						<div class="headerNav__Block">
+							<img class="headerNav__logo" src="assets/image/logo reforma.jpg">
+							<div class="headerNav__navDesktop">
+								<a class="headerNavDesktop__menuLink" href="#topo">Home</a>
+								<a class="headerNavDesktop__menuLink" href="#about">Sobre</a>
+								<a class="headerNavDesktop__menuLink" href="#acting">Atuação</a>
+								<a class="headerNavDesktop__menuLink" href="#contact">Contato</a>
+							</div>
+							<div id="headerNav__navMobile" class="headerNavMobile__sidenav">
+								<!-- <img class="headerNavMobile__logo" src="assets/image/logo reforma.jpg"  onclick="closeNav()"> -->
+								<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+								<a class="headerNavMobile__menuLink" href="#topo" onclick="closeNav()">Home</a>
+								<a class="headerNavMobile__menuLink" href="#about" onclick="closeNav()">Sobre</a>
+								<a class="headerNavMobile__menuLink" href="#acting" onclick="closeNav()">Atuação</a>
+								<a class="headerNavMobile__menuLink" href="#contact" onclick="closeNav()">Contato</a>
+							</div>
+							<span style="font-size:65px; cursor:pointer; color: white;" onclick="openNav()">&#9776;</span>
 						</div>
-					</div>
-					<div id="mySidenav" class="sidenav">
-						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-						<a class="menu-siderbar" href="#header">Home</a>
-						<a class="menu-siderbar" href="#about">Sobre</a>
-						<a class="menu-siderbar" href="#acting">Atuação</a>
-						<a class="menu-siderbar" href="#contact">Contato</a>
-					</div>
-					<span style="font-size:65px;   cursor:pointer" onclick="openNav()">&#9776;</span>
-					<script>
-						function openNav() {
-						  document.getElementById("mySidenav").style.width = "100%";
-						}
-						function closeNav() {
-						  document.getElementById("mySidenav").style.width = "0";
-						}
-					</script>
-				</nav>
-			</div>
-			 
-			<!-- 	<a class="bootom" href="https://api.whatsapp.com/send?l=pt&phone=5521964636400" target="_blank"><img src="assets/image/whatsicon2.png" style="width: 80px; height: auto; position:fixed; bottom: 10px; right: 18px;" data-selector="img"></a> -->
+					</nav>
+				</div>
+ 			</div>
 		</header>
 		<main>
 			<header>
-				<div class="header__blockBackground">
-					<div class="headerBlockBackground__transparent">
-						<div class="headerBlockBackground__info">
-							<h1 class="headerBlockBackground__title">Assessoria Jurídica Especializada!</h1>
+				<div class="mainHeader__blockBackground">
+					<div class="mainHeaderBlock__transparent">
+						<div class="mainHeaderBlock__info">
+							<h1 id="topo" class="mainHeaderBlock__title">Assessoria Jurídica Especializada!</h1>
 						</div>
 					</div>
 				</div>
@@ -62,7 +58,7 @@
 					<p class="firstSecond__paragraph">Presidente da Comissão de Meio Ambiente da OAB-BANGU/Rj.</p>
 					<p class="firstSecond__paragraph">Pós Graduada pela UCAM-RJ Direito e Gestão Ambiental. Extensão em Direito da Família e Direito Cível A VEZ DO MESTRE.</p>
 				</div>
-				<img  class="firstSecond__imgPerfil" src="assets/image/perfildra.png">
+				<img  class="firstSecond__imgPerfil" src="assets/image/perfil3.jpeg">
 			</section>
 			<section id="acting" class="main__secondSection">
 				<div class="container secondSection__block">
@@ -75,8 +71,8 @@
 							<li>Presídio</li>
 							<li>Habeas Corpus</li>
 							<li>Tribunal do Juri</li>
-							<li>Liberdade Provisória</li>
 							<li>Juizado Especial Criminal</li>
+							<li>Liberdade Provisória</li>
 							<li>Defesa em inquérito policial</li>	
 							<li>Relaxamento de Prisão e fiança</li>
 							<li>Acompanhamento a delegacia de polícia 24 horas</li>
@@ -90,9 +86,11 @@
 						<ul class="secondSection__paragraph">
 							<li>Herança</li>
 							<li>Divórcio</li>
-							<li>Partilha</li>
 							<li>Inventário</li>
 							<li>Pensão alimentícia</li>
+							<li>Partilha</li>
+							
+							
 							<li>Reconhecimento União Estável</li>
 						</ul>
 					</div>
@@ -167,5 +165,6 @@
 				<p class="footer__paragraph"><strong>Desenvolvimento:</strong> <a href="http://www.agenciacptech.com.br/">Agência CpTech</a>, Design by Claudio Marques</p>
 			</div>
 		</footer>
+		<script src="index.js"></script>
 	</body>
 </html>
