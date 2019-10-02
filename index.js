@@ -56,7 +56,7 @@ function smoothScrollTo(endX, endY, duration) {
       clearInterval(timer);
     }
     window.scroll(newX, newY);
-  }, 1000 / 60); // 60 fps
+}, 1000 / 60); // 60 fps
 };
 
   
