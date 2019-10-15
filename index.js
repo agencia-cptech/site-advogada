@@ -25,10 +25,9 @@ function scrollToPosition(to) {
 
 function scrollToIdOnClick(event) {
 	event.preventDefault();
-	const to = getScrollTopByHref(event.currentTarget)- 149;
+	const to = getScrollTopByHref(event.currentTarget)- 167;
 	scrollToPosition(to);
 }
-
 menuItems.forEach(item => {
 	item.addEventListener('click', scrollToIdOnClick);
 });
